@@ -1,0 +1,82 @@
+/* Cozy Sloth Theme Styling */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg-deep: #0e1612;
+  --bg-card: #15221b;
+  --bg-card-hover: #1c2e25;
+  --border-subtle: #243d30;
+  --sloth-green: #2ecc71;
+  --sloth-amber: #f39c12;
+  --sloth-moss: #27ae60;
+  --text-main: #ecf0f1;
+  --text-muted: #8fa598;
+  --accent-glow: rgba(46, 204, 113, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.sloth-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sloth-card:hover {
+  border-color: var(--sloth-moss);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.stat-glow {
+  background: radial-gradient(circle at top left, var(--accent-glow) 0%, transparent 70%);
+}
+
+.badge-finance { background: rgba(243, 156, 18, 0.18); color: #f39c12; border: 1px solid rgba(243, 156, 18, 0.3); }
+.badge-work { background: rgba(52, 152, 219, 0.18); color: #3498db; border: 1px solid rgba(52, 152, 219, 0.3); }
+.badge-personal { background: rgba(155, 89, 182, 0.18); color: #9b59b6; border: 1px solid rgba(155, 89, 182, 0.3); }
+.badge-code { background: rgba(46, 204, 113, 0.18); color: #2ecc71; border: 1px solid rgba(46, 204, 113, 0.3); }
+.badge-reading { background: rgba(26, 188, 156, 0.18); color: #1abc9c; border: 1px solid rgba(26, 188, 156, 0.3); }
+.badge-media { background: rgba(230, 126, 34, 0.18); color: #e67e22; border: 1px solid rgba(230, 126, 34, 0.3); }
+
+.sloth-pulse {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.03); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sloth-moss);
+}

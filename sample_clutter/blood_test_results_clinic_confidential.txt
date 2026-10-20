@@ -1,0 +1,18 @@
+METROPOLITAN HEALTH CLINIC & DIAGNOSTICS
+PATIENT LAB REPORT - CONFIDENTIAL MEDICAL RECORD
+Patient Name: John Doe
+Date of Collection: October 08, 2026
+Physician: Dr. H. Vance, MD
+
+PANEL: Comprehensive Metabolic & Lipid Panel
+------------------------------------------------------------
+Test                   Result      Reference Range     Flag
+------------------------------------------------------------
+Total Cholesterol:     185 mg/dL   125-200 mg/dL       NORMAL
+HDL Cholesterol:        58 mg/dL   > 40 mg/dL          OPTIMAL
+LDL Cholesterol:       102 mg/dL   < 100 mg/dL         BORDERLINE
+Triglycerides:         120 mg/dL   < 150 mg/dL         NORMAL
+Fasting Blood Glucose:  91 mg/dL   70-99 mg/dL         NORMAL
+Vitamin D (25-OH):      44 ng/mL   30-100 ng/mL        OPTIMAL
+------------------------------------------------------------
+Doctor's Note: Overall bloodwork is looking very healthy. Maintain regular physical activity and balanced diet. Next routine follow-up recommended in 12 months.

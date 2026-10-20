@@ -1,0 +1,23 @@
+INVOICE #INV-2026-98124
+Amazon Web Services, Inc.
+Billing Date: September 28, 2026
+Due Date: October 25, 2026
+
+Account ID: 9812-4019-3810
+Customer: Ahan / Independent Developer Lab
+
+SUMMARY OF CHARGES:
+------------------------------------------------------------
+1. Amazon Elastic Compute Cloud (EC2) - t4g.medium:     $18.40
+2. Amazon Simple Storage Service (S3) - 1.2 TB:          $27.60
+3. Elastic Load Balancing:                                $16.50
+4. Route 53 DNS & Health Checks:                          $3.50
+------------------------------------------------------------
+SUBTOTAL:                                                $66.00
+Tax (State & Local):                                      $5.28
+------------------------------------------------------------
+TOTAL AMOUNT DUE:                                        $71.28 USD
+
+Payment Status: UNPAID
+ACTION REQUIRED: Please pay by October 25, 2026 to avoid service disruption.
+Thank you for building in the cloud!

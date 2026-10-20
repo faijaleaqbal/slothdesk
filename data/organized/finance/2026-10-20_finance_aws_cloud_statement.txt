@@ -1,0 +1,1 @@
+Amazon Web Services Invoice. S3 bucket costs $45.20. Total due $50.
