@@ -1,82 +1,64 @@
-/* Cozy Sloth Theme Styling */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+/* SlothDesk Cybernetic Editorial Stylesheet */
+/* Design Tokens matching Faijal's Cinematic + Editorial + Technical Portfolio */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
-  --bg-deep: #0e1612;
-  --bg-card: #15221b;
-  --bg-card-hover: #1c2e25;
-  --border-subtle: #243d30;
-  --sloth-green: #2ecc71;
-  --sloth-amber: #f39c12;
-  --sloth-moss: #27ae60;
-  --text-main: #ecf0f1;
-  --text-muted: #8fa598;
-  --accent-glow: rgba(46, 204, 113, 0.15);
+  --bg-deep: #050608;
+  --bg-surface: #0a0c12;
+  --bg-plate: rgba(14, 18, 28, 0.75);
+  --bg-plate-hover: rgba(20, 26, 42, 0.90);
+  
+  --ink-primary: #f2f4f8;
+  --ink-secondary: #9da6be;
+  --ink-tertiary: #5f6880;
+  
+  --line-hair: rgba(255, 255, 255, 0.08);
+  --line-mid: rgba(255, 255, 255, 0.14);
+  --line-accent: rgba(99, 119, 255, 0.35);
+
+  --acc-core: #6377ff;
+  --acc-glow: rgba(99, 119, 255, 0.28);
+  --acc-cyan: #38bdf8;
+  --acc-emerald: #2dd4bf;
+  --acc-amber: #fbbf24;
 }
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
   background-color: var(--bg-deep);
-  color: var(--text-main);
-  min-height: 100vh;
+  color: var(--ink-primary);
+  font-family: 'Hanken Grotesk', -apple-system, sans-serif;
   overflow-x: hidden;
 }
 
-code, pre {
+.font-headline {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-mono {
   font-family: 'JetBrains Mono', monospace;
 }
 
-.sloth-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 16px;
+.glass-plate {
+  background: var(--bg-plate);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--line-hair);
+  border-radius: 8px;
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.sloth-card:hover {
-  border-color: var(--sloth-moss);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+.glass-plate:hover {
+  background: var(--bg-plate-hover);
+  border-color: var(--line-accent);
+  box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.75);
 }
 
-.stat-glow {
-  background: radial-gradient(circle at top left, var(--accent-glow) 0%, transparent 70%);
-}
-
-.badge-finance { background: rgba(243, 156, 18, 0.18); color: #f39c12; border: 1px solid rgba(243, 156, 18, 0.3); }
-.badge-work { background: rgba(52, 152, 219, 0.18); color: #3498db; border: 1px solid rgba(52, 152, 219, 0.3); }
-.badge-personal { background: rgba(155, 89, 182, 0.18); color: #9b59b6; border: 1px solid rgba(155, 89, 182, 0.3); }
-.badge-code { background: rgba(46, 204, 113, 0.18); color: #2ecc71; border: 1px solid rgba(46, 204, 113, 0.3); }
-.badge-reading { background: rgba(26, 188, 156, 0.18); color: #1abc9c; border: 1px solid rgba(26, 188, 156, 0.3); }
-.badge-media { background: rgba(230, 126, 34, 0.18); color: #e67e22; border: 1px solid rgba(230, 126, 34, 0.3); }
-
-.sloth-pulse {
-  animation: pulse 3s infinite ease-in-out;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 0.9; }
-  50% { transform: scale(1.03); opacity: 1; }
-  100% { transform: scale(1); opacity: 0.9; }
-}
-
-/* Custom scrollbars */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg-deep);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border-subtle);
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--sloth-moss);
+.bg-scanlines {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 4px;
 }
