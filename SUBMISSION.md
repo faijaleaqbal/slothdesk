@@ -132,11 +132,11 @@ Running `python sloth.py tidy` outputs a formatted status board:
 
 The complete source code is modular, well-tested, and ready to clone:
 
-🔗 **GitHub Repository**: [https://github.com/your-username/slothdesk](https://github.com/your-username/slothdesk)
+🔗 **GitHub Repository**: [https://github.com/faijaleaqbal/slothdesk](https://github.com/faijaleaqbal/slothdesk)
 
 To run the entire end-to-end demo locally in under 10 seconds:
 ```bash
-git clone https://github.com/your-username/slothdesk.git
+git clone https://github.com/faijaleaqbal/slothdesk.git
 cd slothdesk
 pip install -r requirements.txt
 python run_demo.py

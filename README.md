@@ -99,7 +99,7 @@ And because it is built entirely on open-source AI, **your confidential tax retu
 
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/your-username/slothdesk.git
+git clone https://github.com/faijaleaqbal/slothdesk.git
 cd slothdesk
 pip install -r requirements.txt
 ```
